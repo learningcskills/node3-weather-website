@@ -1,15 +1,3 @@
-// fetch('http://puzzle.mead.io/puzzle').then((data) => {
-//     data.json().then(data => {
-//         console.log(data);
-//     })
-// })
-
-// fetch('http://192.168.1.15:3000/weather?address=zzz').then((data) => {
-//     data.json().then(data => {
-//         console.log(data);
-//     })
-// })
-
 const weatherForm = document.querySelector('form');
 const search = document.querySelector('input');
 const showData = document.querySelector('.show-data');
