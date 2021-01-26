@@ -4,6 +4,7 @@ const hbs = require('hbs');
 const weather = require('./utils/geocode');
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 const publicPath = path.join(__dirname, '../public');
 const viewsPath = path.join(__dirname, '../templates/views');
@@ -94,6 +95,9 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3000, "192.168.1.15", () => {
-    console.log("Server started at 192.168.1.15:3000");
+// app.listen(3000, "192.168.1.15", () => {
+//     console.log("Server started at 192.168.1.15:3000");
+// }); 
+app.listen(port, () => {
+    console.log("Server is up on port " + port);
 }); 
